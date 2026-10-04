@@ -1,0 +1,4 @@
+logs/*.log
+
+# Arquivos de configuração dos projetos não são versionados
+sites/*.caddy
