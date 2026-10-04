@@ -1,0 +1,3 @@
+# Caddyfile principal: só importa os sites de cada projeto.
+# Cada projeto é dono do seu próprio arquivo de rotas - veja sites/README.md.
+import sites/*.caddy

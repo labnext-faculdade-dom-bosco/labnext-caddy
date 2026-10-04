@@ -1,0 +1,24 @@
+services:
+  caddy:
+    image: caddy:2-alpine
+    container_name: labnext_caddy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./sites:/etc/caddy/sites
+      - caddy_data:/data
+      - caddy_config:/config
+      - ./logs:/data/logs
+    networks:
+      - caddy_net
+
+networks:
+  caddy_net:
+    external: true
+
+volumes:
+  caddy_data:
+  caddy_config:
