@@ -2,3 +2,6 @@ logs/*.log
 
 # Arquivos de configuração dos projetos não são versionados
 sites/*.caddy
+
+# Domínios reais de cada projeto não são versionados (ver .env.example)
+.env
